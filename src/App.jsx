@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from "react";
-import { fetchImagesSearch } from "../../services/backend-api.js";
-import SearchBar from "../SearchBar/SearchBar.jsx";
-import ImageGallery from "../ImageGallery/ImageGallery.jsx";
-import Loader from "../Loader/Loader.jsx";
-import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn.jsx";
-import ErrorMessage from "../ErrorMessage/ErrorMessage.jsx";
-import ImageModal from "../ImageModal/ImageModal.jsx";
+import { fetchImagesSearch } from "./services/backend-api.js";
+import SearchBar from "./components/SearchBar/SearchBar.jsx";
+import ImageGallery from "./components/ImageGallery/ImageGallery.jsx";
+import Loader from "./components/Loader/Loader.jsx";
+import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn.jsx";
+import ErrorMessage from "./components/ErrorMessage/ErrorMessage.jsx";
+import ImageModal from "./components/ImageModal/ImageModal.jsx";
 import css from "./App.module.css";
-import { imgMod, pagination } from "../../config/init.js";
+import { imgMod, pagination } from "./config/init.js";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
