@@ -1,9 +1,11 @@
-import Header from "../../components/Header/Header";
+import Navigation from "../../components/Navigation/Navigation";
+import MovieList from "../../components/MovieList/MovieList.jsx";
 
 const MoviesPage = () => {
   return (
     <>
-      <Header />
+      <Navigation />
+      <MovieList />
       <div>MoviesPage</div>
     </>
   );

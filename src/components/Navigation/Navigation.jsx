@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 import clsx from "clsx";
-import css from "./Header.module.css";
+import css from "./Navigation.module.css";
 
 const Header = () => {
   const buildLinkClass = ({ isActive }) => {
@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <nav>
+    <header className={css.header}>
+      <nav className={css.nav}>
         <NavLink to="/" className={buildLinkClass}>
           Home
         </NavLink>

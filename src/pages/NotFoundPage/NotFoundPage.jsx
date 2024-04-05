@@ -1,10 +1,10 @@
-import Header from "../../components/Header/Header";
+import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
   return (
     <>
-      <Header />
       <div>NotFoundPage</div>
+      <Link to="/">Home</Link>
     </>
   );
 };
