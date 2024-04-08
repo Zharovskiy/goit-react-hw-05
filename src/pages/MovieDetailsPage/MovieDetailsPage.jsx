@@ -50,7 +50,7 @@ const MovieDetailsPage = () => {
               <h2>{`${
                 detailsMovie.original_title
               } (${detailsMovie.release_date.slice(0, 4)})`}</h2>
-              <p>{`User Score: ${detailsMovie.popularity}%`}</p>
+              <p>{`User Score: ${detailsMovie.vote_average}%`}</p>
               <h3>Overview</h3>
               <p>{detailsMovie.overview}</p>
               <h4>Genres</h4>
