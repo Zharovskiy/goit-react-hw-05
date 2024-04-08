@@ -1,0 +1,21 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  max-width: calc((100% - 10px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: calc((100% - 30px) / 4);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    max-width: calc((100% - 60px) / 8);
+  }
+}

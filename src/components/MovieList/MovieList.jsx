@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const MovieList = ({ popularMovies }) => {
+import css from "./MovieList.module.css";
+
+const MovieList = ({ title, movies }) => {
+  const location = useLocation();
   return (
     <>
-      <h1>Trending today</h1>
+      {title && <h1>{title}</h1>}
       <ul>
-        {popularMovies.map(({ id, original_title }) => {
+        {movies.map(({ id, original_title }) => {
           return (
-            <li key={id}>
-              <Link to={`/movies/${id}`}>{original_title}</Link>
+            <li key={id} className={css.elem}>
+              <Link state={location} to={`/movies/${id}`}>
+                {original_title}
+              </Link>
             </li>
           );
         })}
